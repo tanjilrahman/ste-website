@@ -8,12 +8,12 @@ const Hero = () => {
       <div className="container">
         <div className="text">
           <h1>
-            Fashion <br />& Branding
+            Sanjar Tex <br />& Expo
           </h1>
           <div className="text-desc">
             <p>
-              Bringing Your Fashion Brand's Unique Identity to Life Through
-              Strategic Marketing and Advertising.
+              100% export-oriented well reputed ready-made garments exporter &
+              supplier in Bangladesh since 2021.
             </p>
             <SecondaryBtn text={"Learn more"} classText="btn-s-90" />
           </div>

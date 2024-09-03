@@ -10,28 +10,28 @@ const Header = () => {
   return (
     <div className="header">
       <div className="container">
-        <h1 className="logo">ALVY</h1>
+        <h1 className="logo">Sanjar Tex & Expo</h1>
         <div className={active ? `nav active` : `nav`}>
-          <ul>
+          {/* <ul>
             {headerMenu.map((elem, index) => (
               <li key={index}>
                 <Link to={`/${elem}`}>{elem}</Link>
               </li>
             ))}
-          </ul>
+          </ul> */}
           <div className="btns-groups">
-            <Link className="btn-cart" to="/cart">
+            {/* <Link className="btn-cart" to="/cart">
               Cart <span>0</span>
-            </Link>
+            </Link> */}
             <PrimaryBtn text="Get in touch" />
-            <div
+            {/* <div
               className={active ? `hamburger active` : `hamburger`}
               onClick={() => setActive(!active)}
             >
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

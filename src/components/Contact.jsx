@@ -43,12 +43,37 @@ const Contact = () => {
     <div className="Contact">
       <div className="container-1">
         <span>Contact</span>
-        <div className="text">
+        {/* <div className="text">
           <h1>Let's make your fashion brand shine</h1>
-          <button className="btn-s">
-            Get in touch
-            <CircleIcon />
-          </button>
+        </div> */}
+
+        <div className="form">
+          <form name="Sanjar Tex & Expo contact form" method="post">
+            <div>
+              <label id="name">Name</label>
+              <input type="text" name="name" />
+            </div>
+            <div>
+              <label id="email">Email</label>
+              <input type="email" name="email" />
+            </div>
+            <div>
+              <label id="phome">Phone</label>
+              <input type="number" name="phome" />
+            </div>
+            <div>
+              <label id="subject">Subject</label>
+              <input type="text" name="subject" />
+            </div>
+            <div>
+              <label id="message">Message</label>
+              <textarea type="text" name="message" />
+            </div>
+            <button type="submit" className="btn-s">
+              Submit
+              <CircleIcon />
+            </button>
+          </form>
         </div>
       </div>
 
