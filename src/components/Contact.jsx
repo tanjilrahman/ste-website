@@ -49,16 +49,11 @@ const Contact = () => {
 
         <div className="form">
           <form
-            name="Sanjar Tex & Expo contact form"
+            name="contact"
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
-            <input
-              type="hidden"
-              name="form-name"
-              value="Sanjar Tex & Expo contact form"
-            />
             <div>
               <label id="name">Name</label>
               <input type="text" name="name" required />
