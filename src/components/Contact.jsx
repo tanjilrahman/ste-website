@@ -52,6 +52,7 @@ const Contact = () => {
             name="Sanjar Tex & Expo contact form"
             method="POST"
             data-netlify="true"
+            netlify-honeypot="bot-field"
           >
             <input
               type="hidden"
