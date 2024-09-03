@@ -80,8 +80,8 @@ const Contact = () => {
           <form
             name="Sanjar Tex & Expo contact form"
             method="POST"
-            action="/"
-            netlify
+            data-netlify="true"
+            onSubmit="submit"
           >
             <input
               type="hidden"
