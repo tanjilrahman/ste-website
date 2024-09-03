@@ -48,12 +48,8 @@ const Contact = () => {
         </div> */}
 
         <div className="form">
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            // netlify-honeypot="bot-field"
-          >
+          <form name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label id="name">Name</label>
               <input type="text" name="name" required />
