@@ -77,7 +77,12 @@ const Contact = () => {
         </form>
 
         <div className="form">
-          <form name="Sanjar Tex & Expo contact form" method="POST" netlify>
+          <form
+            name="Sanjar Tex & Expo contact form"
+            method="POST"
+            action="/"
+            netlify
+          >
             <input
               type="hidden"
               name="form-name"
