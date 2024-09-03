@@ -52,7 +52,7 @@ const Contact = () => {
             name="contact"
             method="POST"
             data-netlify="true"
-            netlify-honeypot="bot-field"
+            // netlify-honeypot="bot-field"
           >
             <div>
               <label id="name">Name</label>
