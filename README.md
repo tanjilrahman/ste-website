@@ -1,6 +1,3 @@
-# Alvy-fashion-website
+# Ste-website
+
 React and Scss
-
-
-
-# ste-website

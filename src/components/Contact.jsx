@@ -48,7 +48,7 @@ const Contact = () => {
         </div> */}
 
         <div className="form">
-          <form name="Sanjar Tex & Expo contact form" method="post">
+          <form name="Sanjar Tex & Expo contact form" netlify>
             <div>
               <label id="name">Name</label>
               <input type="text" name="name" />
