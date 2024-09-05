@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./About.scss";
 import CircleIcon from "./CircleIcon";
+import image1 from "../images/image1.jpg";
 
 const data = [
   {
@@ -31,7 +32,7 @@ const About = () => {
     <div className="About">
       <div className="container">
         <div className="image">
-          <img src="/src/images/image1.jpg" alt="about image" />
+          <img src={image1} alt="about image" />
         </div>
         <div className="text">
           <span>ABout</span>
