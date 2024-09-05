@@ -41,7 +41,7 @@ const socialData = [
 const Contact = () => {
   return (
     <div className="Contact">
-      <div className="container-1">
+      <div className="container-1" id="contact">
         <span>Contact</span>
         {/* <div className="text">
           <h1>Let's make your fashion brand shine</h1>

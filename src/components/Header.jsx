@@ -23,7 +23,10 @@ const Header = () => {
             {/* <Link className="btn-cart" to="/cart">
               Cart <span>0</span>
             </Link> */}
-            <PrimaryBtn text="Get in touch" />
+            <a href={"#contact"}>
+              <PrimaryBtn text="Get in touch" />
+            </a>
+
             {/* <div
               className={active ? `hamburger active` : `hamburger`}
               onClick={() => setActive(!active)}
