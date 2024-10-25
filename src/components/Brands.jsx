@@ -1,28 +1,32 @@
 import React from "react";
 import { SecondaryBtn } from "./Btn";
 import "./Brands.scss";
+import image1 from "../images/image1.jpg";
+import image2 from "../images/image2.jpg";
+import image3 from "../images/image3.jpg";
+import image4 from "../images/image4.webp";
 
 const data = [
   {
     text: "fashion",
     tag: "branding",
-    img: "https://images.unsplash.com/photo-1493655161922-ef98929de9d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: image2,
   },
   {
     text: "Noise",
     tag: "branding",
-    img: "https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: image3,
   },
   {
     text: "Lawyers",
     tag: "identity",
-    img: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    img: image1,
   },
-  {
-    text: "flowers",
-    tag: "identity",
-    img: "https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  },
+  // {
+  //   text: "flowers",
+  //   tag: "identity",
+  //   img: image2,
+  // },
 ];
 
 const Brands = () => {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./About.scss";
 import CircleIcon from "./CircleIcon";
 import image1 from "../images/image1.jpg";
+import image4 from "../images/image4.webp";
 
 const data = [
   {
