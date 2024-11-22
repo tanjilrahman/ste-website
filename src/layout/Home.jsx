@@ -7,6 +7,8 @@ import Service from "../components/Service";
 import About from "../components/About";
 import Brands from "../components/Brands";
 import Contact from "../components/Contact";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   return (
@@ -18,6 +20,7 @@ const Home = () => {
       <About />
       <Brands />
       <Contact />
+      <ToastContainer />
     </div>
   );
 };

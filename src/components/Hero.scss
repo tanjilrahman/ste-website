@@ -7,6 +7,10 @@
     color: #fff;
   }
 
+  .logo {
+    width: 60rem;
+  }
+
   .container {
     width: 100%;
     height: 100%;
@@ -26,16 +30,10 @@
       left: 1rem;
       width: 100%;
 
-      h1 {
-        font-size: 12rem;
-        line-height: 1;
-        font-weight: 500;
-        margin-bottom: 1.5rem;
-      }
-
       p {
-        font-size: 1.8rem;
-        max-width: 800px;
+        font-size: 2.5rem;
+        max-width: 900px;
+        padding: 2rem;
       }
 
       &-desc {
@@ -56,7 +54,11 @@
 @media (max-width: 610px) {
   .hero {
     .container {
+      background-position: left;
       .text {
+        .logo {
+          width: 50rem;
+        }
         h1 {
           font-size: 9rem;
           margin-bottom: 2rem;
@@ -74,6 +76,9 @@
   .hero {
     .container {
       .text {
+        .logo {
+          width: 40rem;
+        }
         h1 {
           font-size: 7rem;
           margin-bottom: 2rem;

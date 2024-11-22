@@ -7,9 +7,7 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <div className="text">
-          <h1>
-            Sanjar Tex <br />& Expo
-          </h1>
+          <img src="logo.png" className="logo" />
           <div className="text-desc">
             <p>
               100% export-oriented well reputed ready-made garments exporter &

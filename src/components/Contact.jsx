@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import CircleIcon from "./CircleIcon";
 import "./Contact.scss";
 import Marquee from "react-fast-marquee";
@@ -6,6 +6,8 @@ import { AiOutlineInstagram, AiOutlineBehance } from "react-icons/ai";
 import { CiTwitter } from "react-icons/ci";
 import { FiFacebook } from "react-icons/fi";
 import { SecondaryBtn } from "./Btn";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const socialData = [
   {
@@ -39,6 +41,52 @@ const socialData = [
 ];
 
 const Contact = () => {
+  const form = useRef();
+  const phone = useRef();
+  const name = useRef();
+  const email = useRef();
+  const subject = useRef();
+  const message = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          if (result.status === 200) {
+            name.current.value = "";
+            phone.current.value = "";
+            email.current.value = "";
+            subject.current.value = "";
+            message.current.value = "";
+            console.log("email sent successfully!");
+            toast.success("Thank you! we'll reach out to you soon!", {
+              position: "top-center",
+              autoClose: 4000,
+              progress: undefined,
+            });
+          }
+        },
+        (error) => {
+          if (error) {
+            console.error("Error:", error);
+            toast.error("Something went wrong! Please try again later.", {
+              position: "top-center",
+              autoClose: 4000,
+              hideProgressBar: true,
+              progress: undefined,
+            });
+          }
+        }
+      );
+  };
   return (
     <div className="Contact">
       <div className="container-1" id="contact">
@@ -48,27 +96,26 @@ const Contact = () => {
         </div> */}
 
         <div className="form">
-          <form name="contact" method="POST">
-            <input type="hidden" name="form-name" value="contact" />
+          <form ref={form} onSubmit={sendEmail} name="contact">
             <div>
               <label id="name">Name</label>
-              <input type="text" name="name" required />
+              <input type="text" name="name" ref={name} required />
             </div>
             <div>
               <label id="email">Email</label>
-              <input type="email" name="email" required />
+              <input type="email" name="email" ref={email} required />
             </div>
             <div>
               <label id="phone">Phone</label>
-              <input type="tel" name="phone" />
+              <input type="tel" name="phone" ref={phone} required />
             </div>
             <div>
               <label id="subject">Subject</label>
-              <input type="text" name="subject" required />
+              <input type="text" name="subject" ref={subject} required />
             </div>
             <div>
               <label id="message">Message</label>
-              <textarea name="message" required></textarea>
+              <textarea name="message" ref={message} required></textarea>
             </div>
             <button type="submit" className="btn-s">
               Submit
